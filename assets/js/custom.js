@@ -4,6 +4,6 @@ $(window).scroll(function() {
     if (scroll >= 50) {
         $(".top-header").addClass("darkHeader");
     } else {
-        $(".top-headertop-header").removeClass("darkHeader");
+        $(".top-header").removeClass("darkHeader");
     }
 });
