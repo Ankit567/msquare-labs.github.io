@@ -1,0 +1,120 @@
+/*
+Theme Name: Willow Tree
+Author: Ankit Jaiswal
+Company Name: UpSide Down Technology
+Company URL: https://updn.co/
+Version: 1.1
+License: GNU General Public License v2 or later
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/**common css start**/
+body { font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-size: 1rem; background-color: #f8f8f8; }
+p { color: #413d4b; font-size: 14px; font-weight: 300; line-height: 24px; letter-spacing: 0.42px; text-transform: initial; }
+h2 { color: #413d4b; font-size: 22px; font-weight: 700; letter-spacing: 1.1px; margin: 10px 0px; line-height: 30px; }
+h3 { color: #413d4b; font-size: 14px; font-weight: 900; letter-spacing: 0.7px; }
+h4 { font-size: 14px; font-weight: 400; text-transform: uppercase; letter-spacing: 0.7px; color: #ffffff }
+.row.text-flex { display: flex; align-items: center; }
+.custom-row { padding: 0px 30px; }
+.row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] { padding-right: 0; padding-left: 0; }
+.no-padding { padding-right: 0 !important; padding-left: 0 !important; }
+h5, h6 { padding: 0; margin: 0; text-transform: initial; letter-spacing: normal; }
+a:hover { text-decoration: none; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.no-padding { padding: 0px !important; }
+.no-margin { margin: 0px; }
+.custom-container { max-width: 75%; margin: auto; }
+/**common css end**/
+
+/*START: Top Menu CSS*/
+header { position: fixed; top: 0; z-index: 2; width: 100%; padding: 20px 0px; }
+ul#top-menu { list-style: none; text-align: right; }
+ul#top-menu li{ display: inline-block; }
+ul#top-menu li a { color: #223547; font-size: 1.375rem; font-weight: 500; display: flex; justify-content: space-between; align-items: center; text-decoration: none; transition: color 0.25s ease-out; outline-offset: -3px; padding: 0px 40px; }
+#top-menu li a:active, #top-menu li a:hover, #top-menu li a:focus  { color: #00e0d0; text-decoration: none; }
+/*END: Top Menu CSS*/
+
+/* Banner Section CSS Start */
+.banner-section img { width: 100%; }
+.banner-section { background-color: #f8f8f8; height: 100vh; }
+.banner-section:after { content: ""; position: absolute; top: -20%; right: 0; bottom: 0; left: 0; background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, #f8f8f8 100%); z-index: 0; height: 98%; }
+.banner-heading h1 { font-size: 70px; padding-bottom: 0; padding-left: 11rem; font-weight: 700; }
+.banner-heading { z-index: 1; margin-top: -8em; position: relative; width: 100%; }
+.padding-right-40 { padding-right: 8rem; }
+.banner-btn:focus, .banner-btn:hover { transform: translateY(-0.625rem); text-decoration: none; outline: 0; color: #ffffff; } .banner-btn { color: #fff; font-size: 16px; font-weight: 500; line-height: 1; text-transform: uppercase; display: inline-block; background: none; padding: 16px 42px; text-decoration: none; border-radius: 0.25rem; letter-spacing: 0.125rem; transition: all 0.25s ease-out; background-color: #1bd9c4; border-color: #1bd9c4; box-shadow: 0 0.625rem 2.5rem 0 rgba(0, 0, 0, 0.06); }
+/* Banner Section CSS End */
+
+/* Subtitle Section CSS Start */
+.subtitle::before { content: ""; background: #1bd9c4; display: block; height: 5px; margin: 15px 0 35px; width: 80px; }
+.subtitle p { font-size: 35px; line-height: 45px; display: inline-block; font-weight: 600; }
+/* Subtitle Section CSS End */
+
+/* Portifolio Section CSS Start */
+.portfolio-section { padding: 50px 0px 80px; }
+.client-list { list-style: none; padding: 0px; }
+.client-list li { display: inline-block; width: 19%; padding: 30px 10px; position: relative; }
+.client-list li img { width: 100%; object-fit: contain; height: 50px; min-width: 130px; /*opacity: 0.5;*/ transition: opacity 0.9s linear;}
+.hover-view-btn { opacity: 0; transition: opacity 0.5s linear; position: absolute; width: 100%; left: 0; right: 0px; height: 100%; top: 0%; text-align: center; font-size: 17px; padding: 30px 40px; color: #707070; line-height: 20px; /*text-decoration: underline;*/ }
+.client-list li:hover .hover-view-btn { opacity: 1; background-color: #f8f8f8; color: #707070; }
+/* Portifolio Section CSS Start */
+
+/* Card Section CSS Start */
+.card { color: #223547; display: block; height: 100%; position: relative; z-index: 1; background: #fff; border-radius: 0.3125rem; box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.1); overflow: hidden; transition: all 0.3s ease; width: 100%; margin-bottom: 30px; min-height: 470px; }
+.card:hover { box-shadow: 0 0.625rem 2.5rem 0 rgba(0, 0, 0, 0.1); transform: translateY(-0.625rem); }
+.card img { width: 100%; }
+.card-content { padding: 15px 30px; }
+.card h2 { color:#223547;  }
+.card p { margin: 0px; font-size: 18px; }
+/* Card Section CSS End */
+
+/* We're different Section CSS Start */
+/*.we-different-card-img { width: 50%; }*/
+/*.target-link { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 1; }*/
+.we-different-card-content { padding: 0px 20px; }
+.we-different-card-img img { width: 100%; }
+.we-different-section h3 { font-size: 40px; }
+.we-different-section h4 { font-size: 30px; font-weight: 700; letter-spacing: 0.7px; color: #000000; text-transform: initial; }
+.we-different-section p { font-size: 18px; }
+.we-different-card { /*position: relative;*/ margin: 20px 0px; display: flex; align-items: center; border: 1px solid #d2d2d7; border-radius: 0.25rem; box-shadow: 0 10px 18px -10px rgba(0, 0, 0, 0.08); } 
+.we-different-card:hover { background-color: #fff; border-color: #f4f4f4; box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.08); }
+.we-different-hr { background-color: #000; visibility: hidden; transition: width 0.6s ease-out; width: 0; margin: 10px 0px; }
+.we-different-card-content a { font-size: 15px; }
+.we-different-card:hover .we-different-hr { height: 5px; width: 7rem; visibility: visible; }
+a.we-different { display: block; margin: 20px 0px;}
+/* We're different Section CSS End */
+
+/*Core Services Section CSS Start */
+.core-services .custom-container { max-width: 85%; }
+.core-services a { font-size: 18px; text-decoration: none; }
+.core-services p { font-size: 14px; line-height: 25px; margin-top: 10px; }
+.core-services-block { margin: 20px 0px 10px; }
+/*Core Services Section CSS End */
+
+/*The Executive’s Guide Section CSS Start*/
+.executive-guide { padding: 50px 0px; }
+.executive-guide-block img { height: 330px; }
+.executive-guide-block { display: flex; align-items: center; transition: all 0.3s ease; }
+.executive-guide-block:hover { box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.06); background-color: #ffffff; }
+.executive-guide-content { padding: 0px 20px; }
+.executive-guide-content a { font-size: 18px; }
+/*The Executive’s Guide Section CSS End*/
+
+/*Contact Section CSS Start*/
+.portfolio-block { background-color: #094074; width: 50%; float: left; }
+.portfolio-block p { color: #ffffff; }
+.portfolio-block h3 { color: #ffffff; margin: 0px 0px 10px; font-size: 35px; font-weight: 600;}
+.contact-form-block { background-color: #1c77c3; width: 50%; float: right; }
+/*Contact Section CSS Start*/
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+     
+}
+@media screen and (max-width: 640px){
+        
+}
