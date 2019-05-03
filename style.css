@@ -32,7 +32,7 @@ a:hover { text-decoration: none; }
 /*START: Top Menu CSS*/
 header { position: fixed; top: 0; z-index: 2; width: 100%; padding: 20px 0px; }
 .top-header.darkHeader { background: #ffffff; transition: all 0.08s linear; transform: translate(0, -20px); padding: 30px 0px 10px; }
-.top-header.darkHeader .site-logo { transform: scale(0.8); }
+.darkHeader .site-logo { transform: scale(0.8); }
 ul#top-menu { list-style: none; text-align: right; }
 ul#top-menu li{ display: inline-block; }
 ul#top-menu li a { color: #223547; font-size: 1.375rem; font-weight: 500; display: flex; justify-content: space-between; align-items: center; text-decoration: none; transition: color 0.25s ease-out; outline-offset: -3px; padding: 0px 40px; }
